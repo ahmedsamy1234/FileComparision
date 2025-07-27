@@ -11,15 +11,3 @@ public class DemoApplication {
 
 	}
 }	
-
-//    @Bean
-//    public CommandLineRunner callPersonService(PersonService personService) {
-//        return args -> {
-//            // here you can call any service method, no controller involved:
-//            List<Person> all = personService.findAll();
-//            System.out.println("Found " + all.size() + " persons:");
-//            all.forEach(p -> System.out.println(" • " + p.getEmail()));
-//            // you could even create, update, delete…
-//        };
-//    }
-

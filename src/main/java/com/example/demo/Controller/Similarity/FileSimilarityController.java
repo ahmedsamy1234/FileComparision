@@ -12,7 +12,7 @@ import org.springframework.http.HttpStatus;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/files")
+@RequestMapping("/similarity")
 public class FileSimilarityController {
 
     private final FileSimilarityFactory similarityFactory;
