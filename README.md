@@ -112,19 +112,15 @@
 
 The **Jaccard similarity** between two files (represented as Redis sets of unique words) is calculated as:
 
-\[
+$$
 \text{Jaccard}(A, B) = \frac{|A \cap B|}{|A \cup B|}
-\]
+$$
 
-Where:  
-- \( A \), \( B \) = Redis sets of unique words from each file  
-- \( |A \cap B| \) = Number of words both files share  
-- \( |A \cup B| \) = Total unique words in both files
+Where:
 
-**Redis Commands Used:**
-- `SINTER` to get intersection
-- `SUNION` to get union
-- `SCARD` to count elements
+- `A`, `B` = Redis sets of unique words from each file
+- `|A ∩ B|` = Number of words both files share (intersection)
+- `|A ∪ B|` = Total unique words in both files (union)
 
 **All operations are performed in Redis (no Java memory bottleneck)!**
 
