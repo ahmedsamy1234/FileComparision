@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "82f0305c-6c0a-44dc-b372-fa6bf82d6c36",
+		"name": "Evision",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26189199",
+		"_collection_link": "https://crimson-meteor-162258.postman.co/workspace/My-Workspace~70bd9647-4e03-40b4-83d3-425eb083aa13/collection/26189199-82f0305c-6c0a-44dc-b372-fa6bf82d6c36?action=share&source=collection_link&creator=26189199"
+	},
+	"item": [
+		{
+			"name": "Generate Files",
+			"item": [
+				{
+					"name": "generate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/file-gen/generate?fileName=file6",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"file-gen",
+								"generate"
+							],
+							"query": [
+								{
+									"key": "fileName",
+									"value": "file6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filestorage",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/files/index?engine=redis&mode=single&fileName=file6",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"files",
+								"index"
+							],
+							"query": [
+								{
+									"key": "engine",
+									"value": "redis"
+								},
+								{
+									"key": "mode",
+									"value": "single"
+								},
+								{
+									"key": "fileName",
+									"value": "file6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index via redis (single)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/api/files/index?engine=redis&mode=single&fileName=file6",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"api",
+										"files",
+										"index"
+									],
+									"query": [
+										{
+											"key": "engine",
+											"value": "redis"
+										},
+										{
+											"key": "mode",
+											"value": "single"
+										},
+										{
+											"key": "fileName",
+											"value": "file6"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "index via redis all",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/api/files/index?engine=redis&mode=single&fileName=file6",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"api",
+										"files",
+										"index"
+									],
+									"query": [
+										{
+											"key": "engine",
+											"value": "redis"
+										},
+										{
+											"key": "mode",
+											"value": "single"
+										},
+										{
+											"key": "fileName",
+											"value": "file6"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "index via ES (Single)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/api/files/index?engine=redis&mode=single&fileName=file6",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"api",
+										"files",
+										"index"
+									],
+									"query": [
+										{
+											"key": "engine",
+											"value": "redis"
+										},
+										{
+											"key": "mode",
+											"value": "single"
+										},
+										{
+											"key": "fileName",
+											"value": "file6"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "index via Es (all)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/api/files/index?engine=redis&mode=single&fileName=file6",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"api",
+										"files",
+										"index"
+									],
+									"query": [
+										{
+											"key": "engine",
+											"value": "redis"
+										},
+										{
+											"key": "mode",
+											"value": "single"
+										},
+										{
+											"key": "fileName",
+											"value": "file6"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "similarity",
+			"item": [
+				{
+					"name": "similarity Via Redis",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/files/similarity?file1=file5&file2=file5",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"files",
+								"similarity"
+							],
+							"query": [
+								{
+									"key": "file1",
+									"value": "file5"
+								},
+								{
+									"key": "file2",
+									"value": "file5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Similarity Via Elastic Seatch",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "http://localhost:8085/backend",
+			"type": "string"
+		}
+	]
+}
